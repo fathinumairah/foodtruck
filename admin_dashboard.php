@@ -31,7 +31,6 @@ function getCount($conn, $table) {
 
 // Fetch total counts
 $adminCount = getCount($conn, 'admin');
-$usersCount = getCount($conn, 'users');
 $clientsCount = getCount($conn, 'clients');
 
 $conn->close();
@@ -93,8 +92,7 @@ $conn->close();
         <a href="admin_dashboard.php">Dashboard</a>
         <div class="admin-view">
             <a href="admin_details.php">Admin Details</a>
-            <a href="user_details.php">User Details</a>
-            <a href="location_details.php">Location Details</a>
+            <!-- <a href="location_details.php">Location Details</a> -->
             <a href="index.php">List of Foods</a>
         </div>
         <a href="logout.php">Log Out</a>
@@ -103,7 +101,7 @@ $conn->close();
         <img src="logo.jpg" alt="Logo" class="logo">
         <h2>Dashboard</h2>
         <div class="row">
-            <div class="col-md-4 mb-3">
+            <div class="col-md-6 mb-3">
                 <div class="card">
                     <div class="card-header">
                         TOTAL REGISTERED ADMIN
@@ -114,18 +112,7 @@ $conn->close();
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <div class="card-header">
-                        TOTAL REGISTERED USERS
-                    </div>
-                    <div class="card-body text-center">
-                        <h1><?php echo $usersCount; ?></h1>
-                        <p>Users</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-6 mb-3">
                 <div class="card">
                     <div class="card-header">
                         LIST OF FOODS

@@ -91,8 +91,8 @@ if (!$result) {
         <a href="admin_dashboard.php">Dashboard</a>
         <div class="admin-view">
             <a href="admin_details.php">Admin Details</a>
-            <a href="user_details.php">User Details</a>
-            <a href="location_details.php">Location Details</a>
+          <!--  <a href="user_details.php">User Details</a> -->
+           <!-- <a href="location_details.php">Location Details</a> -->
             <a href="index.php">List of Foods</a>
         </div>
         <a href="logout.php">Log Out</a>
