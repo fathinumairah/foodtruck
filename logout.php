@@ -12,22 +12,29 @@ session_destroy();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #e9e6e1;
+            background-image: url('bg1.png');
+            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             text-align: center;
+            margin: 0;
         }
         .container {
             max-width: 500px;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .btn-primary {
+        .btn-custom {
             margin-top: 20px;
+            background-color: #8DA7A8;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #769294;
         }
     </style>
 </head>
@@ -35,7 +42,7 @@ session_destroy();
     <div class="container">
         <h2>You have been logged out</h2>
         <p>Thank you for visiting. Click the button below to log in again.</p>
-        <a href="index.html" class="btn btn-primary">Login</a>
+        <a href="index.html" class="btn btn-custom">Login</a>
     </div>
 </body>
 </html>

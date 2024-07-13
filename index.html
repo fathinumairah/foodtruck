@@ -10,6 +10,7 @@
             background: url('bg1.png') no-repeat center center fixed;
             background-size: cover;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -20,6 +21,8 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
         }
         .login-header {
             background-color: #8DA7A8;
@@ -29,6 +32,10 @@
             border-top-right-radius: 5px;
             text-align: center;
             margin: -20px -20px 20px -20px;
+        }
+        .logo {
+            width: 100px;
+            margin-bottom: 20px;
         }
         .btn-custom {
             background-color: #8DA7A8;
@@ -40,6 +47,7 @@
     </style>
 </head>
 <body>
+    <img src="logo.jpg" alt="Logo" class="logo">
     <div class="login-container">
         <div class="login-header">Login</div>
         <form action="login.php" method="post">
